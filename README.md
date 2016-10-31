@@ -1,9 +1,7 @@
 # Docker container for SaltStack 8.3
 
-[![](https://images.microbadger.com/badges/image/vando/saltstack.svg)](https://microbadger.com/images/vando/saltstack "Get your own image badge on microbadger.com") 
-[![](https://images.microbadger.com/badges/version/vando/saltstack.svg)](https://microbadger.com/images/vando/saltstack "Get your own version badge on microbadger.com")
 
-This docker installs the lastest stable version (2015.8.3) of SaltStack.
+This docker installs the lastest stable version (2016.3.3) of SaltStack.
 
 The previous container was [based on Debian 8.2](Dockerfile.deb) (118 MB) and this release is based on Alpine (91.82 MB).
 
@@ -17,7 +15,7 @@ The previous container was [based on Debian 8.2](Dockerfile.deb) (118 MB) and th
 You can pull this container from Docker Hub
 
 ```
-docker pull vando/saltstack
+docker pull curratore/saltstack
 ```
 
 ## Connect to container
@@ -25,7 +23,7 @@ docker pull vando/saltstack
 Start the container
 
 ```
-docker run -d -p 4505:4505 -p 4506:4506 --name saltstack vando/saltstack
+docker run -d -p 4505:4505 -p 4506:4506 --name saltstack curratore/saltstack
 docker exec -it saltstack sh
 ```
 
